@@ -7,6 +7,13 @@ import (
   "os"
 )
 
+/*
+ to do in parallel, can't just pass pointers to slices, 
+ need to pass separate lists to "go quicksort" calls,
+ and have a master thread (main()) that reads from the channel
+ and 'merges' them
+*/
+
 func quicksort(a []int) {
   if len(a) <= 1 {
     return
