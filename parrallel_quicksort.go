@@ -42,6 +42,7 @@ func main() {
     start := time.Now()
     quicksort(a)
     elapsed_ns := time.Since(start)
+    fmt.Println("sorted: ", a)
 
     fmt.Printf("took %f seconds \n", float64(elapsed_ns)/1000000000.0 )
   } else {
